@@ -49,3 +49,126 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1;
+    padding: 1rem 0;
+}
+
+@media (min-width: 1024px){
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar__logo {
+    width: 20rem;
+    height: auto;
+}
+
+@media (min-width: 1024px){
+    .navbar__logo {
+        width: 15rem;
+    }
+}
+
+.navigation {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .navigation {
+        display: flex;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .navigation {
+        margin: 0;
+        gap: 0.5rem;
+    }
+}
+
+.navigation__item {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+    color: var(--textDark);
+}
+
+.navigation__item:hover {
+    color: var(--primary);
+}
+
+@media (min-width: 768px){
+    .navigation__item {
+        padding: .5rem;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px){
+    .actions {
+        justify-content: start;
+    }
+}
+
+.actions__button {
+    all: unset;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    color: var(--textLight);
+    font-weight: 500;
+    cursor: pointer;
+    border: 0.2rem solid var(--primary);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    transition: all .3s ease-in-out;
+}
+
+.actions__button:hover {
+    opacity: 0.9;
+}
+
+@media (min-width: 1024px){
+    .actions__button {
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+.actions__button--outline {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.actions__button--outline:hover {
+    background-color: var(--primary);
+    opacity: 1;
+    color: var(--textLight);
+}
