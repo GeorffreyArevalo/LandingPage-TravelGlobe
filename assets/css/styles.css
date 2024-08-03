@@ -1,0 +1,51 @@
+:root {
+    --primary: #01796f;
+    --secondary: #da2c38;
+    --default: #50c878;
+    --light: #FFFFF0;
+    --textDark: #333333;
+    --textLight: #FFFFF0;
+    --title: 'Lato', sans-serif;
+    --text: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: var(--text);
+    color: var(--textDark);
+    background-color: var(--light);
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
