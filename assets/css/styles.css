@@ -172,3 +172,70 @@ img {
     opacity: 1;
     color: var(--textLight);
 }
+
+.actions__button--outline-secondary {
+    background-color: transparent;
+    border: .2rem solid var(--secondary);
+    color: var(--secondary);
+}
+
+.actions__button--outline-secondary:hover {
+    background-color: var(--secondary);
+    opacity: 1;
+    color: var(--textLight);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px){
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.hero__text__title {
+    font-size: 6rem;
+    font-family: var(--title);
+    font-weight: 900;
+    text-align: center;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+@media (min-width: 768px){
+    .hero__text__title {
+        font-size: 7rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px){
+    .hero__text__title {
+        font-size: 8rem;
+    }
+}
+
+.hero__text__title--accent {
+    color: var(--primary);
+}
+
+.hero__text__paragraph {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .hero__text__paragraph{
+        text-align: left;
+    }
+}
